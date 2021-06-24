@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+:root {
+    /* --- colors --- */
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 55%);
+    --very-dark-gray: hsl(0, 0%, 41%);
+
+    --font-size: 15px;
+    --font-size-big: 55px;
+
+    --font-alata: "Alata", sans-serif;
+    --font-josefin: "Josefin Sans", sans-serif;
+
+    --padding-padrao: 8rem;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-alata);
+    color: var(--white);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+}
+
+@media screen and (max-width: 1080px) {
+    :root {
+        --padding-padrao: 3rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    :root {
+        --font-size-big: 40px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    :root {
+        --padding-padrao: 2.5rem;
+    }
+}

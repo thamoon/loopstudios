@@ -1,0 +1,152 @@
+.creations {
+    padding: 2rem var(--padding-padrao) 5rem;
+}
+
+.creations-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.5rem;
+    margin-top: 2.5rem;
+}
+
+.creations-title {
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: var(--font-josefin);
+    letter-spacing: 2px;
+    font-size: var(--font-size-big);
+}
+
+.creations-link {
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 2px;
+    padding: 0.5rem 2rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+    transition: 200ms;
+}
+
+.creations-link:hover,
+.creations-link:focus {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.second {
+    display: none;
+}
+
+.creations-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 2.65rem;
+    grid-template-columns: repeat(4, calc(25% - 2rem));
+}
+
+.creations-card {
+    height: 450px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.creations-card-content {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: flex-end;
+}
+
+.creations-card:nth-child(1) {
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+
+.creations-card:nth-child(2) {
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+
+.creations-card:nth-child(3) {
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+
+.creations-card:nth-child(4) {
+    background-image: url(../images/desktop/image-grid.jpg);
+}
+
+.creations-card:nth-child(5) {
+    background-image: url(../images/desktop/image-from-above.jpg);
+}
+
+.creations-card:nth-child(6) {
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+
+.creations-card:nth-child(7) {
+    background-image: url(../images/desktop/image-curiosity.jpg);
+}
+
+.creations-card:nth-child(8) {
+    background-image: url(../images/desktop/image-fisheye.jpg);
+}
+
+.creations-card-title {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: var(--font-josefin);
+    font-size: 30px;
+    margin-top: auto;
+    padding: 2rem;
+    margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 1046px) {
+    .creations-container {
+        grid-template-columns: repeat(3, calc(33.33% - 2rem));
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .creations-container {
+        grid-template-columns: repeat(2, calc(50% - 2rem));
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .first {
+        display: none;
+    }
+
+    .second {
+        display: inline-block;
+        margin: 2rem auto;
+    }
+
+    .creations-title {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .creations-container {
+        grid-template-columns: 100%;
+    }
+
+    .creations-card {
+        height: 200px;
+    }
+
+    .creations-card:nth-child(even) {
+        background-position: center;
+    }
+
+    .creations-link:nth-child(1) {
+        display: none;
+        width: 0;
+    }
+}
